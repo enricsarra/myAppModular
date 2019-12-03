@@ -15,6 +15,7 @@ Run `ng generate component component-name` per generar un nou component. També 
 ## Build
 
 Run `ng build` per construir el projecte. Els artefactes de creació s’emmagatzemaran al fitxer `dist/` directori. Utilitza  `--prod` flag per a "production build".
+A tsconfig em agegit "enableIvy": true a "angularCompilerOptions" per analitzar components no utilitzats
 
 ## Running unit tests (encara no he fet res)
 
@@ -29,17 +30,22 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 Per obtenir més ajuda sobre l’ús angular de la CLI `ng help` o aneu a veure el [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
 
 ## Bootstrap 
-Instalat bootstrap "bootstrap": "^4.3.1"
+Instalat modul bootstrap "bootstrap": "^4.3.1"
+Declarat a "angular.json"
 
-1. "bootstrap": "^4.3.1"
-2. "jquery": "^3.4.1"
+1. "bootstrap": "^4.3.1"  
+2. "jquery": "^3.4.1"   instalat a angular.json apartat
 3. "popper.js": "^1.16.0"
+4. 
 
+## fontawesome
+Instalat modul fontawesome "@fortawesome/fontawesome-free": "^5.11.2"
+Declarat a "angular.json"
 
 ## Angular material
 1. "@angular/material": "^8.2.3",
    - ...
    - ...
 
-## Falta info per afegir
+## Falta info per afegir :)
 
