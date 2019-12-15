@@ -1,0 +1,9 @@
+<div class="container-fluid">
+    <h1>Receptes <small>Casolanes de supervivencia</small></h1>
+    <!-- Card columns -->
+    <div class="card-columns bg-dark">
+        <app-rceta-tarja (rcetaSeleccionado)="verRceta( $event )" [rceta]="rceta" [index]="i" *ngFor="let rceta of rcetas; let i = index"></app-rceta-tarja>
+
+
+    </div>
+</div>

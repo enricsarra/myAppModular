@@ -1,0 +1,20 @@
+<div class="card animated fadeIn fast bg-dark">
+    <img class="card-img-top " [src]="rceta.img" [alt]="rceta.nombre">
+    <div class="card-body">
+        <h5 class="card-title">{{rceta.nombre}}</h5>
+        <p class="card-text">{{rceta.bio}}</p>
+        <p class="card-text"><small class="text-muted">{{rceta.aparicion}}</small></p>
+
+        <!-- Hay 2 formas de hacerlo: si usamos buttom con javascript y si
+            utilizamos <a> con el routerLink-->
+        <button (click)="verRceta()" type="buttom" class="btn btn-outline-primary btn-block badge badge-pill"> més...
+            </button>
+
+
+        <!-- <a [routerLink]="['/rceta']" class="badge badge-primary">Primary</a> -->
+
+
+
+        <!-- <a [routerLink]="['/rceta', i]" class="btn btn-outline-primary">Ver más link...</a> -->
+    </div>
+</div>

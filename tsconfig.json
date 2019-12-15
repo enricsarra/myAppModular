@@ -26,7 +26,8 @@
       "@shared/*": ["src/app/website/shared/*"],
       "@home/*": ["src/app/website/home/*"],
       "@myspotify/*": ["src/app/website/myspotify/*"],
-      "@material/*": ["src/app/material/*"]
+      "@material/*": ["src/app/material/*"],
+      "@tinc-gana/*": ["src/app/website/tinc-gana/*"]
 
     }
   },

@@ -1,0 +1,17 @@
+<h1>Cercant: <small>{{ termino }}</small></h1>
+<hr>
+
+<div class="row animated fadeIn fast" *ngIf="rcetas.length == 0">
+    <div class="col-md-12">
+        <div class="alert alert-info" role="alert">
+            No hi ha resultats amb aquest terme: {{ termino }}
+        </div>
+    </div>
+</div>
+
+
+<div class="card-columns">
+
+    <app-rceta-tarja [rceta]="rceta" [index]="rceta.idx" *ngFor="let rceta of rcetas"></app-rceta-tarja>
+
+</div>

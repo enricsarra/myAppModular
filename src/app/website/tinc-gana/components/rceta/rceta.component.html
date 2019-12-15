@@ -1,0 +1,60 @@
+<div class="container bg-dark">
+    <!-- <h1 class="animated fadeIn">{{ rceta.nombre | uppercase }} <small>( {{ rceta.aparicion | date:'y'}} )</small></h1> -->
+    <h1 class="animated fadeIn">{{ rceta.nombre | uppercase }} </h1>
+
+    <!-- <h4>Parametro pasado: <strong>{{parametroPasado}}</strong></h4> -->
+
+    <div class="mb-1"><img class="card-img-top img-logo" [src]="rceta.img" [alt]="rceta.nombre"></div>
+    <h5>{{rceta.bio}}</h5>
+
+
+    <div class="row  p-2">
+
+        <div class="col-md-6  p-1">
+
+
+            <h5><strong>Ingredients:</strong></h5>
+
+            <ul class="list-group  ">
+                <li *ngFor="let item of rceta.ingredientes.split(';') " class="list-group-item bg-dark border-1 border-white">{{ item }}
+                </li>
+            </ul>
+
+            <a [routerLink]="['/tinc-gana/rcetas']" class="btn btn-outline-primary btn-block badge badge-pill m-0">Tornar</a>
+
+
+
+        </div>
+
+
+
+        <div class="col-md-6 p-1">
+            <h5><strong>Elaboració:</strong></h5>
+            <ul class="list-group  ">
+                <li *ngFor="let item of rceta.elaboracion.split(';') " class="list-group-item bg-dark border-1 border-white">{{ item }}
+                </li>
+            </ul>
+        </div>
+
+    </div>
+
+    <div class="row animated fadeIn fast" *ngIf="rceta.video == false">
+        <div class="col-md-12">
+            <div class="alert alert-info" role="alert">
+                No hi ha video per aquesta recepta.
+            </div>
+        </div>
+    </div>
+    <div *ngIf="rceta.video" class="row mt-2 p-0 ">
+        <div class="col embed-responsive embed-responsive-16by9">
+            <!-- <iframe class="embed-responsive-item" src="https://www.youtube-nocookie.com/embed/Ku5aPLcJyL4?start=5" allowfullscreen></iframe> -->
+            <!-- <iframe class="embed-responsive-item" [src]="rceta.video | domseguro:'https://www.youtube.com/embed/' " frameborder="0" allowfullscreen></iframe> -->
+            <iframe class="embed-responsive-item" [src]="rceta.video | domseguro:'https://www.youtube-nocookie.com/embed/' " frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+        </div>
+
+
+
+    </div>
+</div>

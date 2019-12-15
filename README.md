@@ -40,6 +40,7 @@ Declarat a "angular.json"
 
 ## fontawesome
 Instalat modul fontawesome "@fortawesome/fontawesome-free": "^5.11.2"
+
 Declarat a "angular.json"
 
 ## Angular material

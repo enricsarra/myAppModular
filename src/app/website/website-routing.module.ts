@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
 import { LayoutComponent } from '@shared/components/layout/layout.component';
+import { TincGanaModule } from './tinc-gana/tinc-gana.module';
 
 
 const routes: Routes = [
@@ -25,6 +26,10 @@ const routes: Routes = [
       {
         path: 'myspotify',
         loadChildren: () => import('@myspotify/myspotify.module').then(m => m.MyspotifyModule)
+      },
+      {
+        path: 'tinc-gana',
+        loadChildren: () => import('@tinc-gana/tinc-gana.module').then(m => m.TincGanaModule)
       },
       { path: '**', pathMatch: 'full', redirectTo: ''},
     ]
