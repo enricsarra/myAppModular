@@ -50,3 +50,5 @@ Declarat a "angular.json"
 
 ## Falta info per afegir :)
 
+## environments
+El directorio /src/environments no se sube a github por tener las claves de firebase
