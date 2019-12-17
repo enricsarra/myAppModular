@@ -1,0 +1,29 @@
+<h2> Vota els plats que més t'agraden </h2>
+<hr>
+
+
+<div class="row">
+    <div class="col">
+
+        <div class="card-columns ">
+
+            <div class="card bg-dark m-1 p-1" *ngFor="let juego of juegos">
+
+                <img [src]="juego.url" class="card-img-top" [alt]="juego.name">
+
+                <div class="card-body">
+                    <h5 class="card-title"> {{ juego.name }}</h5>
+                    <!-- <p class="card-text">Clica aquí per a votar </p> -->
+
+                    <button class="btn btn-block btn-outline-primary badge badge-pill" (click)="votarJuego( juego )">
+                    Votar
+                </button>
+
+                </div>
+            </div>
+
+        </div>
+
+
+    </div>
+</div>
