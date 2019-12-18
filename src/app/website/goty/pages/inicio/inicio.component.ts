@@ -32,7 +32,7 @@ export class InicioComponent implements OnInit {
       map( (resp: Game[]) => resp.map( ({ name, votos }) => ({ name, value: votos }) ))
     )
     .subscribe( juegos => {
-      console.log('juegos',juegos);
+      //console.log('juegos',juegos);
       this.juegos = juegos;
     });
 

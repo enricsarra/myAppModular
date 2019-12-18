@@ -1,12 +1,12 @@
-<div>
+<div class="container-fluid ">
     <!-- <p class="border border-3 border-secondary">Home works!!!</p> -->
-    <div class="row  ml-1">
+    <div class="row  container-fluid ">
         <div class="col">
-            <div class="card-deck">
-                <div class="card bg-secondary ">
+            <div class="card-columns">
+                <div class="card bg-secondary">
                     <img src="assets/img/banner-fira2-organya-ico.png" class="card-img-top" alt="...">
 
-                    <div class="card-body">
+                    <div class="card-body ">
                         <h5 class="card-title">Home</h5>
                         <p class="card-text">Quina tranquilitat.</p>
                         <div>
@@ -17,9 +17,9 @@
                         </div>
 
                     </div>
-                    <div class="card-footer ">
-                        <small class="text-muted ">Last updated 3 mins ago</small>
-                    </div>
+                    <!-- <div class="card-footer text-primary">
+                        <small class="text-white ">Fira Organyá</small>
+                    </div> -->
                 </div>
                 <div class="card bg-secondary ">
                     <img src="assets/img/banner-ico.png" class="card-img-top" alt="... ">
@@ -35,9 +35,9 @@
                         </div>
 
                     </div>
-                    <div class="card-footer ">
-                        <small class="text-muted ">Last updated 3 mins ago</small>
-                    </div>
+                    <!-- <div class="card-footer ">
+                        <small class="text-white ">Last updated 3 mins ago</small>
+                    </div> -->
                 </div>
                 <div class="card bg-secondary ">
                     <img src="assets/img/banner-mandonguilles-ico.png " class="card-img-top " alt="... ">
@@ -51,9 +51,26 @@
                         </div>
 
                     </div>
-                    <div class="card-footer ">
+                    <!-- <div class="card-footer ">
                         <small class="text-muted ">Last updated 3 mins ago</small>
+                    </div> -->
+                </div>
+
+                <div class="card bg-secondary ">
+                    <img src="assets/img/vota.png " class="card-img-top " alt="... ">
+                    <div class="card-body ">
+                        <h5 class="card-title ">Vota</h5>
+                        <p class="card-text ">Receptes casolanes per sobreviure.</p>
+
+                        <div class=" text-left">
+                            <button [routerLink]="['/goty/inicio']" class="btn btn-outline-primary badge badge-pill bg-dark">Go Votar</button>
+                            <!-- <button routerLink="/myspotify/home" class="btn btn-outline-secondary ">Go MySpotify</button> -->
+                        </div>
+
                     </div>
+                    <!-- <div class="card-footer ">
+                        <small class="text-muted ">Last updated 3 mins ago</small>
+                    </div> -->
                 </div>
             </div>
         </div>

@@ -22,7 +22,7 @@ export class GameService {
 
     if ( this.juegos.length > 0 ) {
       // no tenemos juegos
-      console.log('Desde caché');
+      // console.log('Desde caché');
       // of permite retornar cualquier cosa como observable
       return of(this.juegos);
 
