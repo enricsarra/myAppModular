@@ -18,6 +18,17 @@
     background-color: rgba(66, 70, 104, 0.685);
 }
 
+#main-footer {
+    text-align: center;
+    font-size: .9em;
+    /* line-height: 1.2; */
+    /* padding: 4em 0em; */
+}
+
+.pointer {
+    cursor: pointer;
+}
+
 .border-1 {
     border-width: 1px;
     padding: 1rem;
