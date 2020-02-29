@@ -22,9 +22,10 @@ import { Page404Component } from './page404/page404.component';
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     AppRoutingModule,
     HttpClientModule,
-    BrowserAnimationsModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]

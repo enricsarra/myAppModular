@@ -1,6 +1,5 @@
 import { Component, OnDestroy, Input} from '@angular/core';
 
-
 @Component({
   selector: 'app-grafico-barra-horizontal',
   templateUrl: './grafico-barra-horizontal.component.html',

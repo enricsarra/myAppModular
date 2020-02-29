@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-import { GotyComponent as Enric} from "./goty.component";
+import { GotyComponent as Enric} from './goty.component';
 import { InicioComponent } from './pages/inicio/inicio.component';
 import { GotyComponent } from './pages/goty/goty.component';
 
