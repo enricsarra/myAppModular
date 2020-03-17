@@ -18,15 +18,14 @@ export class RcetasComponent implements OnInit {
   }
 
   ngOnInit() {
-    // console.log('La página recetas ya está renderizada. ngOnInit del componente rcetas listo');
+    console.log('La página recetas ya está renderizada. ngOnInit del componente rcetas listo');
 
     this.rcetas = this.rcetasService.getRcetas();
-    // console.log( 'recetas.....:',this.rcetas );
-   
+    // console.log( this.rcetas );
   }
 
   verRceta( idx: number) {
-    // console.log(idx);
+    console.log('antes', idx);
     this.router.navigate( ['/rceta', idx]);
   }
 

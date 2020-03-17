@@ -46,8 +46,8 @@ export interface Rceta {
     elaboracion: string;
     img: string;
     aparicion: string;
+    dificultat: number;
     video: string;
     idx?: number;
     tiempo?: number;
-   
 }

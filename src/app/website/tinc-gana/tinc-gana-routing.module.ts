@@ -9,6 +9,7 @@ import { AboutComponent } from './components/about/about.component';
 import { RcetasComponent } from './components/rcetas/rcetas.component';
 import { RcetaComponent } from './components/rceta/rceta.component';
 import { BuscadorComponent } from './components/buscador/buscador.component';
+import { DificultatComponent } from './components/dificultat/dificultat.component';
 
 const routes: Routes = [
   {
@@ -30,6 +31,9 @@ const routes: Routes = [
       },
       { path: 'buscar/:termino',
         component: BuscadorComponent,
+      },
+      { path: 'dificultat',
+        component: DificultatComponent,
       },
     ]
   },

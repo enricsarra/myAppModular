@@ -30,10 +30,10 @@ export class RcetaComponent implements OnInit {
   ngOnInit( ) {
     this.activatedRoute.params.subscribe( params => {
       // tslint:disable-next-line: no-string-literal
-      // console.log( 'parametros: ', params, params['id']);
+      console.log( 'parametros: ', params, params['id']);
       // tslint:disable-next-line: no-string-literal
       this.rceta =  this.rcetasService.getRceta( params['id'] );
-      // console.log( 'Receta:', this.rceta );
+      console.log( 'Heroe:', this.rceta );
       // tslint:disable-next-line: no-string-literal
       this.parametroPasado = params['id'];
       this.parametrosPasados = params;

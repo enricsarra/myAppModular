@@ -16,7 +16,7 @@ export class NavbarComponent implements OnInit {
 
 
 buscarRceta( termino: string ){
-    // console.log('término de búsqueda en navbar: ', termino);
+   console.log('término de búsqueda en navbar: ', termino);
    this.router.navigate( ['tinc-gana/buscar', termino] );
 }
 
