@@ -9,7 +9,7 @@ export class GraficoBarraHorizontalComponent implements OnDestroy {
 
   @Input() results: any[] = [];
   
-  /* results: any[] = [
+  /* results1: any[] = [
     {
       name: 'Juego 1',
       value: 20
@@ -45,6 +45,7 @@ export class GraficoBarraHorizontalComponent implements OnDestroy {
   colorScheme = 'nightLights';
   // intervalo;
   constructor() {
+    // console.log('results', this.results); 
     /* this.intervalo = setInterval ( () => {
       console.log('Tick-tick');
       // no se puede modificar results
